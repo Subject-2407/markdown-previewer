@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
+  /* height: 100vh; */
+  height: 100vh;
+  /* padding: 5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  gap: 0.5rem;
+}
+
+.container{
+  /* background-color: blue; */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* margin-top: 1rem; */
+  gap: 3rem;
+  /* background-color: white; */
+  margin-top: 1rem;
+}
+
+#copyright{
   color: white;
+  /* background-color: aquamarine; */
 }
 
-.App-link {
-  color: #61dafb;
+.editor-div, .preview-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.editor-div{
+  width: 450px;
+  /* height: inherit; */
+  /* background-color: #8c8cff; */
+  padding: 1rem;
+}
+
+.preview-div{
+  width: 450px;
+  /* height: inherit; */
+  /* background-color: red; */
+  padding: 1rem;
+}
+
+#editor{
+  padding: 1.5rem;
+  resize: none;
+  border: 2px solid #ff9696;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #202124;
+  color: white;
+  /* padding: 1rem; */
+  -webkit-box-shadow:0px 0px 72px 12px rgba(255,0,0,0.51);
+-moz-box-shadow: 0px 0px 72px 12px rgba(255,0,0,0.51);
+box-shadow: 0px 0px 72px 12px rgba(255,0,0,0.51);
+  outline: none;
+}
+
+#preview{
+  /* padding: 0.5rem; */
+  overflow-wrap: break-word;
+  border: 2px solid #8c8cff;
+  padding: 1.5rem;
+  font-size: 1rem;
+  width: 100%;
+  height: 450px;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+  -webkit-box-shadow:0px 0px 72px 12px rgba(0,0,255,0.51);
+-moz-box-shadow: 0px 0px 72px 12px rgba(0,0,255,0.51);
+box-shadow: 0px 0px 72px 12px rgba(0,0,255,0.51);
+}
+
+#preview img{
+  width: 100%;
 }
